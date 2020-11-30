@@ -7,7 +7,9 @@ app.use(bodyParser.urlencoded({
     extended: true
 }));
 app.post("/", function(req, res) {
-    onsole.log(req.body)
+    res.json({
+        success: true
+    })
 });
 
 app.listen(3000, function() {
