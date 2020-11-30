@@ -6,7 +6,7 @@ const app = express();
 app.use(bodyParser.urlencoded({
     extended: true
 }));
-app.post("/", function(req, res) {
+app.post("/temperature", function(req, res) {
     res.json({
         success: true
     })
